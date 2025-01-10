@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Survey;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -18,6 +19,8 @@ class QuestionFactory extends Factory
     {
         return [
             //
+            'question' => $this->faker->sentence,
+            'type' => $this->faker->randomElement(['text', 'textarea', 'radio', 'checkbox', 'select', 'email', 'number', 'date', 'time']),
         ];
     }
 }

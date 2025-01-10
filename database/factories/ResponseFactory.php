@@ -18,6 +18,10 @@ class ResponseFactory extends Factory
     {
         return [
             //
+            'survey_id' => $this->faker->numberBetween(1, 10),
+            'question_id' => $this->faker->numberBetween(1, 10),
+            'choice_id' => $this->faker->numberBetween(1, 10),
+            'answer' => $this->faker->sentence,
         ];
     }
 }

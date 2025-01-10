@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Question;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,8 +17,9 @@ class ChoiceFactory extends Factory
      */
     public function definition(): array
     {
+
         return [
-            //
+            'choice' => $this->faker->sentence(3),
         ];
     }
 }
