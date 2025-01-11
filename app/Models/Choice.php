@@ -9,11 +9,15 @@ class Choice extends Model
 {
     use HasFactory;
     //
-    public $protected = ['question_id','choice'];
+    public $fillable = ['question_id', 'choice'];
 
     public function question()
     {
         return $this->belongsTo(Question::class);
     }
 
+    public function responses()
+    {
+        return $this->belongsToMany(Response::class, 'response_choice');
+    }
 }

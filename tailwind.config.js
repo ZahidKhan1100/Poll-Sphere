@@ -1,5 +1,6 @@
 import defaultTheme from "tailwindcss/defaultTheme";
 import forms from "@tailwindcss/forms";
+import colors from "tailwindcss/colors.js";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -21,6 +22,10 @@ export default {
             },
             colors: {
                 primary: colors.rose,
+                blue: {
+                    600: '#2563eb',
+                    700: '#1d4ed8',
+                },
             },
         },
     },

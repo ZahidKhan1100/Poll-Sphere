@@ -10,7 +10,7 @@ class Survey extends Model
 {
     use HasFactory;
     //
-    public $protected = ['user_id', 'title', 'status', 'start_date', 'end_date'];
+    public $fillable = ['user_id', 'title', 'status', 'start_date', 'end_date'];
 
     public function user()
     {
