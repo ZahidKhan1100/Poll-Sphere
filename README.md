@@ -78,7 +78,7 @@ Edit the .env file to match your database setup:
    php artisan serve
 ```
 11. **Access the Application**:
-    Admin Panel: Visit http://localhost:8000/admin/login
-    Default Admin Credentials: admin@pollsphere.com / password
+    Admin Panel: Visit http://localhost:8000/admin/
+    Default Admin Credentials: admin@pollsphere.com / password (http://localhost:8000/register) use this link for new regsiter user
 
-    User Portal: Visit http://localhost:8000/login
+    User : Visit http://localhost:8000/
