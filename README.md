@@ -9,7 +9,7 @@
 
 # Poll Sphere - Online Survey Management System
 
-![Poll Sphere Banner](https://via.placeholder.com/1200x400.png?text=Poll+Sphere+Banner)
+
 
 A robust web application built with **Laravel**, **Livewire**, and **Filament** for creating, managing, and analyzing online surveys. Designed for admins to effortlessly manage content and users, while providing actionable insights through interactive dashboards.
 
@@ -48,3 +48,37 @@ A robust web application built with **Laravel**, **Livewire**, and **Filament** 
    ```bash
    git clone https://github.com/ZahidKhan1100/Poll-Sphere.git
    cd poll-sphere
+2. **Install PHP Dependencies**:
+   composer install
+3. **Install JavaScript Dependencies:**:
+   npm install
+4. **Configure Environment:**:
+   Copy the example environment file:
+   cp .env.example .env
+   Generate the application encryption key:
+   php artisan key:generate
+   Edit the .env file to match your database setup:
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=8889
+   DB_DATABASE=poll_sphere
+   DB_USERNAME=
+   DB_PASSWORD=
+
+5. **Create the Database:**:
+   Manually create a MySQL database named poll_sphere (matches your .env settings).
+
+6. **Run Database Migrations & Seeding**:
+   php artisan migrate --seed
+
+7. **Compile Frontend Assets**:
+   npm run build
+
+8. **Start the Development Server**:
+   php artisan serve
+
+9. **Access the Application**:
+    Admin Panel: Visit http://localhost:8000/admin/login
+    Default Admin Credentials: admin@pollsphere.com / password
+
+    User Portal: Visit http://localhost:8000/login
