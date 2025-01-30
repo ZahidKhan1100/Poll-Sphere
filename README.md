@@ -49,35 +49,42 @@ A robust web application built with **Laravel**, **Livewire**, and **Filament** 
    git clone https://github.com/ZahidKhan1100/Poll-Sphere.git
    cd poll-sphere
 2. **Install PHP Dependencies**:
+   ```bash
    composer install
-3. **Install JavaScript Dependencies:**:
+4. **Install JavaScript Dependencies:**:
+   ```bash
    npm install
-4. **Configure Environment:**:
+6. **Configure Environment:**:
    Copy the example environment file:
    cp .env.example .env
    Generate the application encryption key:
+   ```bash
    php artisan key:generate
-   Edit the .env file to match your database setup:
+Edit the .env file to match your database setup:
+```bash
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
    DB_PORT=8889
    DB_DATABASE=poll_sphere
    DB_USERNAME=
    DB_PASSWORD=
-
-5. **Create the Database:**:
+```
+7. **Create the Database:**:
    Manually create a MySQL database named poll_sphere (matches your .env settings).
 
-6. **Run Database Migrations & Seeding**:
+8. **Run Database Migrations & Seeding**:
+    ```bash
    php artisan migrate --seed
 
-7. **Compile Frontend Assets**:
+9. **Compile Frontend Assets**:
+```bash
    npm run build
-
-8. **Start the Development Server**:
+```
+10. **Start the Development Server**:
+```bash
    php artisan serve
-
-9. **Access the Application**:
+```
+11. **Access the Application**:
     Admin Panel: Visit http://localhost:8000/admin/login
     Default Admin Credentials: admin@pollsphere.com / password
 
