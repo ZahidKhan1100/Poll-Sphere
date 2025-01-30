@@ -7,9 +7,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-# SurveyForge - Online Survey Management System
+# Poll Sphere - Online Survey Management System
 
-![SurveyForge Banner](https://via.placeholder.com/1200x400.png?text=SurveyForge+Banner)
+![Poll Sphere Banner](https://via.placeholder.com/1200x400.png?text=Poll+Sphere+Banner)
 
 A robust web application built with **Laravel**, **Livewire**, and **Filament** for creating, managing, and analyzing online surveys. Designed for admins to effortlessly manage content and users, while providing actionable insights through interactive dashboards.
 
@@ -41,10 +41,10 @@ A robust web application built with **Laravel**, **Livewire**, and **Filament** 
 - PHP ≥ 8.1
 - Composer
 - Node.js ≥ 16.x
-- Database (MySQL/PostgreSQL/SQLite)
+- MySQL Database (or compatible)
 
-### Steps
+### Step-by-Step Setup
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/surveyforge.git
-   cd surveyforge
+   git clone https://github.com/ZahidKhan1100/Poll-Sphere.git
+   cd poll-sphere
